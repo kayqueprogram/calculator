@@ -5,6 +5,13 @@ function insert(num)
     document.getElementById('resultado').innerHTML = numero + num;
 }
 
+function resultado(num)
+{
+  var numero = document.getElementById('resultado').innerHTML;
+  if (numero.length > 10) return
+    document.getElementById('resultado').innerHTML = numero + num;
+}
+
 function clean()
 {
     document.getElementById('resultado').innerHTML = "";
